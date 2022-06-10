@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { Error404Component } from './error-404/error-404.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { Error404Component } from './error-404/error-404.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
       {
