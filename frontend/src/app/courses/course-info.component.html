@@ -32,7 +32,7 @@
     <label class="col-sm-2 col-form-label">Rating:</label>
 
     <div class="col-sm-10">
-      <input [(ngModel)]="course.rating" name="rating" #courseRating="ngModel" type="number" required class="form-control" [ngClass]="{'is-invalid': courseRating.invalid}">
+      <input [(ngModel)]="course.rating" name="rating" #courseRating="ngModel" type="number" required class="form-control" [ngClass]="{'is-invalid': courseRating.invalid}" max="5" min="0.5">
 
       <div class="invalid-feedback">
         <span>Course rating is required</span>
